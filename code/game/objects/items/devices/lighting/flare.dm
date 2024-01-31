@@ -1,7 +1,7 @@
 /obj/item/device/flashlight/flare
-	name = "flare"
-	desc = "A red standard-issue flare. There are instructions on the side reading 'twist cap off, make light'."
-	desc_info = "Use this item in your hand, to turn on the light."
+	name = "фальшфеєр"
+	desc = "Стандартний фальшфеєр червоного кольору. На боковій стороні присутня інструкція із написом 'зніміть ковпачок та направте фальшфеєр в сторону'."
+	desc_info = "Використайте це предмет у руці, щоб запалити його."
 	w_class = ITEMSIZE_SMALL
 	brightness_on = 3 // Pretty bright.
 	light_power = 4
@@ -84,9 +84,9 @@
 		damtype = initial(damtype)
 
 /obj/item/device/flashlight/flare/torch
-	name = "torch"
-	desc = "A rustic source of light."
-	desc_info = "Click on a source of flame, to light the torch."
+	name = "смолоскип"
+	desc = "Примітивне джерело світла."
+	desc_info = "Натисніть на джерело полум'я, щоб запалити смолоскип."
 	w_class = ITEMSIZE_LARGE
 	brightness_on = 2
 	light_power = 3
