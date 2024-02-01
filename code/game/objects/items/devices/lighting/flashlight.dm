@@ -1,7 +1,7 @@
 /obj/item/device/flashlight
-	name = "flashlight"
-	desc = "A hand-held emergency light."
-	desc_info = "Use this item in your hand, to turn on the light. Click this light with the opposite hand, to remove the cell contained inside."
+	name = "ліхтар"
+	desc = "Портативний аварійний ліхтар."
+	desc_info = "Використовуйте цей предмет у руці, щоб увімкнути світло. Натисніть на цей ліхтар іншою рукою, щоб вилучити батарею, що знаходиться всередині."
 	icon = 'icons/obj/lighting.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/items/lefthand_lighting.dmi',
@@ -18,7 +18,7 @@
 
 	matter = list(MATERIAL_PLASTIC = 50, MATERIAL_GLASS = 20)
 
-	action_button_name = "Toggle Flashlight"
+	action_button_name = "Перемкнути Ліхтар"
 	/// Is the light currently on or off?
 	var/on = FALSE
 	/// Luminosity when on
@@ -290,7 +290,7 @@
 			to_chat(user, SPAN_NOTICE("\The [H]'s pupils narrow."))
 
 /obj/item/device/flashlight/verb/toggle_brightness()
-	set name = "Toggle Flashlight Brightness"
+	set name = "Перемкнути Яскравість Ліхтаря"
 	set category = "Object"
 	set src in usr
 	set_brightness(usr)
@@ -299,8 +299,8 @@
 	starts_with_cell = FALSE
 
 /obj/item/device/flashlight/pen
-	name = "penlight"
-	desc = "A pen-sized light, used by medical staff."
+	name = "ручка ліхтарик"
+	desc = "Ліхтар розміром з ручку, що використовується медичним персоналом."
 	icon_state = "penlight"
 	item_state = "pen"
 	drop_sound = 'sound/items/drop/accessory.ogg'
@@ -312,8 +312,8 @@
 	light_wedge = LIGHT_OMNI
 
 /obj/item/device/flashlight/drone
-	name = "low-power flashlight"
-	desc = "A miniature lamp, that might be used by small robots."
+	name = "малопотужний ліхтарик"
+	desc = "Мініатюрна лампа, яку можуть використовувати маленькі роботи."
 	icon_state = "penlight"
 	item_state = ""
 	obj_flags = OBJ_FLAG_CONDUCTABLE
@@ -322,8 +322,8 @@
 	w_class = ITEMSIZE_TINY
 
 /obj/item/device/flashlight/heavy
-	name = "heavy duty flashlight"
-	desc = "A high-luminosity flashlight, for specialist duties."
+	name = "потужний ліхтар"
+	desc = "Ліхтар високої потужності, призначений для спеціальних обов'язків."
 	icon_state = "heavyflashlight"
 	item_state = "heavyflashlight"
 	brightness_on = 4
